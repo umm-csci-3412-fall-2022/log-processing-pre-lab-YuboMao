@@ -1,5 +1,6 @@
-# bin/bash
-contents = $1
-header&footer = $2
-mychart =  $3
-cat "${header&footer}_header.html" "$contents" "${header$footer}_footer.html" > "mychart" 
+#!/bin/bash
+
+contents="$1"
+headerfooter="$2"
+mychart="$3"
+cat "${headerfooter}_header.html" "$contents" "${headerfooter}_footer.html" > "$mychart" 
